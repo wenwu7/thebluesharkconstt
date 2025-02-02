@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Blue Shark Contracting.co</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            transition: background 0.3s;
+        }
+
+        .dark-mode {
+            background-color: #121212;
+            color: white;
+        }
+
+        header {
+            background-color: #004080;
+            color: white;
+            padding: 30px;
+            text-align: center;
+            font-size: 40px; /* Increased font size for the header */
+            font-weight: bold;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 0; /* No margin-top needed now */
+        }
+
+        header img {
+            height: 80px; /* Increased logo size */
+            margin-right: 20px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background: #00264d;
+            padding: 15px;
+            margin-top: 20px; /* Added space below the header */
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 15px 25px;
+            font-size: 18px;
+            transition: 0.3s;
+            cursor: pointer;
+        }
+
+        nav a:hover {
+            background: #00509e;
+            border-radius: 5px;
+        }
+
+        .hero {
+            background: url('https://source.unsplash.com/1600x900/?construction,building') no-repeat center center/cover;
+            color: #FFD700;
+            text-align: center;
+            padding: 0; /* Removed padding to eliminate spacing */
+            font-size: 32px;
+            font-weight: bold;
+            margin-top: 60px; /* To prevent content from being hidden under the fixed navbar */
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+            margin-top: 80px; /* Prevents content from hiding under the navbar */
+        }
+
+        .section {
+            background: white;
+            padding: 30px;
+            margin: 20px 0;
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        .dark-mode .section {
+            background: #333;
+        }
+
+        .content-area {
+            padding: 20px;
+            min-height: 500px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #00264d;
+            color: white;
+            margin-top: 20px;
+        }
+
+        .dark-mode-toggle {
+            position: fixed;
+            top: 70px;
+            right: 20px;
+            background: #333;
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            border-radius: 5px;
+            z-index: 1000;
+        }
+
+        /* Highlight and animate text */
+        .highlight-text {
+            font-size: 18px;
+            color: #FFD700;
+            font-weight: bold;
+            animation: highlightAnimation 1.5s ease-in-out infinite;
+        }
+
+        @keyframes highlightAnimation {
+            0% {
+                color: #FFD700;
+                transform: scale(1);
+            }
+
+            50% {
+                color: #ff4500;
+                transform: scale(1.1);
+            }
+
+            100% {
+                color: #FFD700;
+                transform: scale(1);
+            }
+        }
+
+        strong {
+            font-weight: bold;
+        }
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <img src="C:\Users\xu wenwu\Desktop\logo 2.jpg" alt="The Blue Shark Contracting.co Logo" wi">
+        The Blue Shark Contracting.co
+    </header>
+    <button class="dark-mode-toggle" onclick="toggleDarkMode()">🌙 Dark Mode</button>
+    
+    <nav>
+        <a href="#" data-page="home">Home</a>
+        <a href="#" data-page="about">About Us</a>
+        <a href="#" data-page="services">Services</a>
+        <a href="#" data-page="portfolio">Portfolio</a>
+        <a href="#" data-page="team">Our Team</a>
+        <a href="#" data-page="testimonials">Testimonials</a>
+        <a href="#" data-page="contact">Contact</a>
+    </nav>
+
+    <div class="hero">
+        Your Trusted Partner in Construction & Contracting
+    </div>
+
+    <div class="container">
+        <div class="content-area" id="content-area">
+            <h2>Welcome to The Blue Shark Contracting.co</h2>
+            <p><strong>The Blue Shark Contracting.co</strong> is a well-established contracting company with over <strong>10 years of experience</strong> in the industry. We specialize in providing exceptional construction, renovation, and project management services for both residential and commercial sectors.</p>
+
+            <p>Founded in <strong>2015</strong>, our company has built a reputation for delivering high-quality projects on time and within budget. Our team of skilled professionals and experienced engineers ensures that every project, no matter the size, is completed with the utmost care and attention to detail.</p>
+
+            <p><span class="highlight-text">At The Blue Shark Contracting.co, we value customer satisfaction and have a proven track record of success in delivering projects that meet and exceed expectations.</span></p>
+
+            <p>Our primary focus is on building long-lasting relationships with our clients by providing high-quality construction services, including residential homes, commercial spaces, industrial facilities, and specialized infrastructure projects. Our project management services are known for being thorough, effective, and cost-efficient.</p>
+
+            <p>We also offer a range of additional services such as <strong>renovation, maintenance, and consultation</strong>, which ensure that our clients’ properties remain in excellent condition over time. Whether it’s a complete home renovation or a large-scale commercial build, we have the expertise and resources to handle it all.</p>
+
+            <p><strong>Our Vision:</strong> To be the leading construction and contracting company that transforms the dreams of our clients into reality, while maintaining the highest standards of quality, safety, and sustainability in the industry.</p>
+
+            <p><strong>Our Mission:</strong> To provide top-notch construction and contracting services, ensuring every project is completed with integrity, professionalism, and precision. Our mission is to continue growing as a company while maintaining our values of trust and excellence in every task we undertake.</p>
+
+            <p>Our company's success lies in our dedicated team and the strong relationships we have built with our clients. We pride ourselves on being adaptable to the ever-changing market demands and client needs.</p>
+
+            <p class="highlight-text">We are proud of the wide range of projects we have undertaken, from high-rise buildings to bespoke residential properties. Our portfolio reflects our versatility, skill, and commitment to excellence in every project we complete.</p>
+
+            <p><strong>Contact Us Today!</strong> If you're looking for a trusted, experienced, and innovative contracting partner, look no further than <strong>The Blue Shark Contracting.co</strong>. We are ready to bring your vision to life!</p>
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2025 The Blue Shark Contracting.co. All Rights Reserved.
+    </footer>
+
+    <script>
+        function toggleDarkMode() {
+            document.body.classList.toggle('dark-mode');
+        }
+
+        const navLinks = document.querySelectorAll('nav a');
+        const contentArea = document.getElementById('content-area');
+
+        navLinks.forEach(link => {
+            link.addEventListener('click', (event) => {
+                event.preventDefault(); // Prevent default link behavior
+                const page = event.target.dataset.page;
+                loadContent(page);
+            });
+        });
+
+        function loadContent(page) {
+    const content = {
+        'home': `
+            <h2>Welcome to The Blue Shark Contracting.co</h2>
+            <p><strong>The Blue Shark Contracting.co</strong> is a well-established contracting company with over <strong>10 years of experience</strong> in the industry. We specialize in providing exceptional construction, renovation, and project management services for both residential and commercial sectors.</p>
+
+            <p>Founded in <strong>2015</strong>, our company has built a reputation for delivering high-quality projects on time and within budget. Our team of skilled professionals and experienced engineers ensures that every project, no matter the size, is completed with the utmost care and attention to detail.</p>
+
+            <p><span class="highlight-text">At The Blue Shark Contracting.co, we value customer satisfaction and have a proven track record of success in delivering projects that meet and exceed expectations.</span></p>
+
+            <p>Our primary focus is on building long-lasting relationships with our clients by providing high-quality construction services, including residential homes, commercial spaces, industrial facilities, and specialized infrastructure projects. Our project management services are known for being thorough, effective, and cost-efficient.</p>
+
+            <p>We also offer a range of additional services such as <strong>renovation, maintenance, and consultation</strong>, which ensure that our clients’ properties remain in excellent condition over time. Whether it’s a complete home renovation or a large-scale commercial build, we have the expertise and resources to handle it all.</p>
+
+            <p><strong>Our Vision:</strong> To be the leading construction and contracting company that transforms the dreams of our clients into reality, while maintaining the highest standards of quality, safety, and sustainability in the industry.</p>
+
+            <p><strong>Our Mission:</strong> To provide top-notch construction and contracting services, ensuring every project is completed with integrity, professionalism, and precision. Our mission is to continue growing as a company while maintaining our values of trust and excellence in every task we undertake.</p>
+
+            <p>Our company's success lies in our dedicated team and the strong relationships we have built with our clients. We pride ourselves on being adaptable to the ever-changing market demands and client needs.</p>
+
+            <p class="highlight-text">We are proud of the wide range of projects we have undertaken, from high-rise buildings to bespoke residential properties. Our portfolio reflects our versatility, skill, and commitment to excellence in every project we complete.</p>
+
+            <p><strong>Contact Us Today!</strong> If you're looking for a trusted, experienced, and innovative contracting partner, look no further than <strong>The Blue Shark Contracting.co</strong>. We are ready to bring your vision to life!</p>
+        `,
+        'about': `<h2>About Us</h2>
+                  <p>We are a leading contracting company with expertise in infrastructure, commercial, and residential projects.</p>
+                  <p>Our team of experienced engineers and project managers ensures quality, safety, and efficiency in every project.</p>
+                  <img src='C:\\Users\\xu wenwu\\Desktop\\about us.webp' alt='About Us' width="50%">`,
+        'services': `<h2>Our Services</h2>
+                    <ul>
+                        <li><strong>Construction</strong> - From residential to commercial spaces.</li>
+                        <li><strong>Project Management</strong> - Comprehensive oversight and quality assurance.</li>
+                        <li><strong>Renovation & Maintenance</strong> - Upgrading existing structures for modern needs.</li>
+                        <li><strong>Consultation</strong> - Expert advice for optimized construction solutions.</li>
+                    </ul>
+                    <img src='https://source.unsplash.com/800x400/?architecture' alt='Our Services'>`,
+        'portfolio': `<h2>Our Portfolio</h2>
+                    <p>Take a look at our successfully completed projects.</p>
+                    <div>
+                        <img src='https://source.unsplash.com/400x300/?skyscraper' alt='Project 1'>
+                        <img src='https://source.unsplash.com/400x300/?building' alt='Project 2'>
+                        <img src='https://source.unsplash.com/400x300/?bridge' alt='Project 3'>
+                    </div>`,
+        'team': `<h2>Our Team</h2>
+                 <ul>
+                     <li><strong>CEO:</strong> Mr. Suresh Kumar</li>
+                     <li><strong>Managing Director (MD):</strong> Mr. Karanveer Singh</li>
+                     <li><strong>Chief Financial Officer (CFO):</strong> Mrs. Rajinder Kour</li>
+                 </ul>`,
+        'testimonials': `<h2>Client Testimonials</h2>
+                        <p>"The Blue Shark Contracting.co transformed our vision into reality with excellent execution!" - Client A</p>
+                        <p>"Their attention to detail and professionalism set them apart in the industry." - Client B</p>
+                        <p>"Highly recommend for any large-scale projects!" - Client C</p>`,
+        'contact': `<h2>Contact Us</h2>
+                   <p>Email: <a href='mailto:contact@blueshark.com'>contact@blueshark.com</a></p>
+                   <p>Phone: +91-123-456-7890</p>
+                   <p>Address: 123 Blue Street, Mumbai, India</p>`
+    };
+    contentArea.innerHTML = content[page] || '<p>Content not available.</p>';
+}
+
+    </script>
+</body>
+
+</html>
